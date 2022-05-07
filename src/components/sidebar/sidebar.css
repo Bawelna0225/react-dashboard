@@ -1,0 +1,15 @@
+.sidebar {
+  flex: 1;
+  min-height: 100vh;
+}
+.sidebar .top {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .top .logo {
+  font-size: 20px;
+  color: purple;
+}
+/*# sourceMappingURL=sidebar.css.map */
