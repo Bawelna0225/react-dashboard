@@ -1,15 +1,64 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 100vh;
+  border-right: 1px solid #e69d4f;
+  gap: 30px;
 }
 .sidebar .top {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #e69d4f;
 }
 .sidebar .top .logo {
   font-size: 20px;
-  color: purple;
+  color: #e69d4f;
+}
+.sidebar .center ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .center ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar .center ul li:hover {
+  background-color: rgba(249, 234, 210, 0.6);
+  color: #ee993e;
+}
+.sidebar .center ul li span {
+  padding-left: 10px;
+}
+.sidebar .center ul li .icon {
+  color: #ee993e;
+}
+.sidebar .bottom {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.sidebar .bottom .colorOption {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #ee993e;
+  cursor: pointer;
+  margin: 5px;
+}
+.sidebar .bottom .colorOption:nth-child(2) {
+  background-color: #ddd;
+}
+.sidebar .bottom .colorOption:nth-child(2) {
+  background-color: #222;
+}
+.sidebar .bottom .colorOption:nth-child(3) {
+  background-color: #231101;
 }
 /*# sourceMappingURL=sidebar.css.map */

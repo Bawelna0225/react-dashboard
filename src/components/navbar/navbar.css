@@ -1,2 +1,56 @@
-
+.navbar {
+  height: 50px;
+  border-bottom: 1px solid #e69d4f;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+.navbar .wrapper {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .wrapper .items {
+  display: flex;
+  align-items: center;
+}
+.navbar .wrapper .items .item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  padding: 5px;
+}
+.navbar .wrapper .items .item .counter {
+  background-color: #e69d4f;
+  width: 15px;
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.navbar .wrapper .items .item .avatar {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 35px;
+}
+.navbar .wrapper .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e69d4f;
+  padding: 3px;
+}
+.navbar .wrapper .search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
 /*# sourceMappingURL=navbar.css.map */

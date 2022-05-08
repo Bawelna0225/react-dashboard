@@ -1,5 +1,16 @@
 import React from 'react'
 import './sidebar.css'
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import CategoryIcon from '@mui/icons-material/Category';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import QueryStatsIcon from '@mui/icons-material/QueryStats';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Sidebar = () => {
   return (
@@ -9,13 +20,24 @@ const Sidebar = () => {
         </div>
         <div className="center">
             <ul>
-                <li><span>Dashboard</span></li>
-                <li><span>Dashboard</span></li>
-                <li><span>Dashboard</span></li>
-                <li><span>Dashboard</span></li>
+                <li><DashboardIcon className='icon'/><span>Dashboard</span></li>
+                <li><PeopleAltIcon className='icon'/><span>Users</span></li>
+                <li><CategoryIcon className='icon'/><span>Products</span></li>
+                <li><CreditCardIcon className='icon'/><span>Orders</span></li>
+                <li><LocalShippingIcon className='icon'/><span>Delivery</span></li>
+                <li><QueryStatsIcon className='icon'/><span>Stats</span></li>
+                <li><NotificationsActiveIcon className='icon'/><span>Notifications</span></li>
+                <li><HealthAndSafetyIcon className='icon'/><span>System health</span></li>
+                <li><PsychologyIcon className='icon'/><span>Logs</span></li>
+                <li><SettingsIcon className='icon'/><span>Settings</span></li>
+                <li><LogoutIcon className='icon'/><span>Logout</span></li>
             </ul>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <div className="colorOption"></div>
+          <div className="colorOption"></div>
+          <div className="colorOption"></div>
+        </div>
     </div>
   )
 }

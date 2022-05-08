@@ -1,14 +1,67 @@
 .sidebar{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 100vh;
+    border-right: 1px solid rgb(230, 157, 79);
+    gap: 30px;
     .top{
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 1px solid rgb(230, 157, 79);
         .logo{
             font-size: 20px;
-            color: purple;
+            color: rgb(230, 157, 79);
+        }
+    }
+    .center{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba(249, 234, 210, 0.6);
+                    color: rgb(238, 153, 62);
+
+                }
+                span{
+                    padding-left: 10px;
+                }
+                .icon{
+                    color: rgb(238, 153, 62);
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption{
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            border: 1px solid rgb(238, 153, 62);
+            cursor: pointer;
+            margin: 5px;
+            &:nth-child(2){
+                background-color: #ddd;
+            }
+            &:nth-child(2){
+                background-color: #222;
+            }
+            &:nth-child(3){
+                background-color: rgb(35, 17, 1);
+            }
         }
     }
 }
