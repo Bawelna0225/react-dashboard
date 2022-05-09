@@ -10,14 +10,13 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className="top">
-            <span className="logo">Logo</span>
+            <span className="logo">Dashboard</span>
         </div>
         <div className="center">
             <ul>
@@ -34,13 +33,7 @@ const Sidebar = () => {
                 <li><HealthAndSafetyIcon className='icon'/><span>System health</span></li>
                 <li><PsychologyIcon className='icon'/><span>Logs</span></li>
                 <li><SettingsIcon className='icon'/><span>Settings</span></li>
-                <li><LogoutIcon className='icon'/><span>Logout</span></li>
             </ul>
-        </div>
-        <div className="bottom">
-          <div className="colorOption"></div>
-          <div className="colorOption"></div>
-          <div className="colorOption"></div>
         </div>
     </div>
   )

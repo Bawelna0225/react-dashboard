@@ -1,12 +1,10 @@
 import React from 'react'
 import './navbar.css'
 import SearchIcon from '@mui/icons-material/Search';
-import GTranslateIcon from '@mui/icons-material/GTranslate';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
+import LogoutIcon from '@mui/icons-material/Logout';
+
 
 const Navbar = () => {
   return (
@@ -23,6 +21,10 @@ const Navbar = () => {
           </div>
           <div className="item"><ChatBubbleOutlineIcon/>
           <div className="counter">2</div></div>
+          <div className="item">
+          <LogoutIcon className='icon'/>
+
+          </div>
           <div className="item">
             <img 
               src="https://picsum.photos/50" 

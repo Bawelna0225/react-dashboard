@@ -6,20 +6,24 @@ a{
     flex-direction: column;
     flex: 1;
     min-height: 100vh;
-    border-right: 1px solid rgb(230, 157, 79);
+    // border-right: 1px solid rgb(230, 157, 79);
     gap: 30px;
     .top{
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid rgb(230, 157, 79);
+        // border-bottom: 1px solid rgb(230, 157, 79);
         .logo{
             font-size: 20px;
             color: rgb(230, 157, 79);
         }
     }
     .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 100px);
         ul{
             list-style-type: none;
             margin: 0;

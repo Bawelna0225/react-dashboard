@@ -7,7 +7,6 @@ a {
   flex-direction: column;
   flex: 1;
   min-height: 100vh;
-  border-right: 1px solid #e69d4f;
   gap: 30px;
 }
 .sidebar .top {
@@ -15,11 +14,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e69d4f;
 }
 .sidebar .top .logo {
   font-size: 20px;
   color: #e69d4f;
+}
+.sidebar .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
 }
 .sidebar .center ul {
   list-style-type: none;
