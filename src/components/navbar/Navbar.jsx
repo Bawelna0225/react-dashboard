@@ -18,17 +18,11 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-            <GTranslateIcon/> <span>English</span>
-          </div>
-          <div className="item"><Brightness4Icon/></div>
-          <div className="item"><FullscreenExitIcon/></div>
-          <div className="item">
             <NotificationsActiveIcon/>
             <div className="counter">4</div>
           </div>
           <div className="item"><ChatBubbleOutlineIcon/>
           <div className="counter">2</div></div>
-          <div className="item"><ListOutlinedIcon/></div>
           <div className="item">
             <img 
               src="https://picsum.photos/50" 

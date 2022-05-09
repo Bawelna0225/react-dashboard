@@ -1,0 +1,97 @@
+.new{
+    display: flex;
+    .newContainer{
+        flex: 8;
+        .top{
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            h1{
+                color: lightgray;
+                font-size: 20px;
+            }
+        }
+        .bottom{
+
+            display: flex;
+            .left{
+                flex: 1;
+                box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+                padding: 20px;
+                margin: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    & + .chooseImg .icon{
+                        opacity: 0;
+                        transition: 300ms linear;
+                    }
+                    &:hover + .chooseImg .icon{
+                        opacity: 1;
+                    }
+                }
+                .chooseImg{
+                    position: absolute;
+                    .icon{
+                        font-size: 100px;
+                        color: rgba(222, 222, 222, 0.696);
+                        cursor: pointer;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .right{
+                flex: 2;
+                box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.5);
+                padding: 20px;
+                margin: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    .inputContainer{
+                        width: 40%;
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                        input{
+                            width: 100%;
+                            border: none;
+                            padding: 5px;
+                            border-bottom: 1px solid gray;
+                            outline: none;
+                            &:focus{
+                                border-bottom: 1px solid orange;
+                            }
+                        }
+                    }
+                    button{
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color: orange;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}

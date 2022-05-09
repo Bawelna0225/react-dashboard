@@ -1,3 +1,6 @@
+a{
+    color: #222;
+}
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -29,7 +32,7 @@
                 cursor: pointer;
                 &:hover{
                     background-color: rgba(249, 234, 210, 0.6);
-                    color: rgb(238, 153, 62);
+                    color: rgb(238, 153, 62) !important;
 
                 }
                 span{

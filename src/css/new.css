@@ -1,2 +1,97 @@
-
+.new {
+  display: flex;
+}
+.new .newContainer {
+  flex: 8;
+}
+.new .newContainer .top {
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.5);
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.new .newContainer .top h1 {
+  color: lightgray;
+  font-size: 20px;
+}
+.new .newContainer .bottom {
+  display: flex;
+}
+.new .newContainer .bottom .left {
+  flex: 1;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.5);
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.new .newContainer .bottom .left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.new .newContainer .bottom .left img + .chooseImg .icon {
+  opacity: 0;
+  transition: 300ms linear;
+}
+.new .newContainer .bottom .left img:hover + .chooseImg .icon {
+  opacity: 1;
+}
+.new .newContainer .bottom .left .chooseImg {
+  position: absolute;
+}
+.new .newContainer .bottom .left .chooseImg .icon {
+  font-size: 100px;
+  color: rgba(222, 222, 222, 0.696);
+  cursor: pointer;
+}
+.new .newContainer .bottom .left .chooseImg .icon:hover {
+  opacity: 1;
+}
+.new .newContainer .bottom .right {
+  flex: 2;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.5);
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.new .newContainer .bottom .right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.new .newContainer .bottom .right form .inputContainer {
+  width: 40%;
+}
+.new .newContainer .bottom .right form .inputContainer label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.new .newContainer .bottom .right form .inputContainer input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+.new .newContainer .bottom .right form .inputContainer input:focus {
+  border-bottom: 1px solid orange;
+}
+.new .newContainer .bottom .right form button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  cursor: pointer;
+  margin-top: 10px;
+}
 /*# sourceMappingURL=new.css.map */

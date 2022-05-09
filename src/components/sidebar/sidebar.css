@@ -1,3 +1,7 @@
+a {
+  color: #222;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@
 }
 .sidebar .center ul li:hover {
   background-color: rgba(249, 234, 210, 0.6);
-  color: #ee993e;
+  color: #ee993e !important;
 }
 .sidebar .center ul li span {
   padding-left: 10px;
